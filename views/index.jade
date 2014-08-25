@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	.reg-main
+		.reg-upload
+			.reg-upload-header
+				h1
+					诚邀您参与Cloud先行者活动!
+				p
+					上传个人靓照大会现场入场,扫脸即可!同时获得大会组委会提供的精美礼包!
+			.reg-upload-img.cc
+				.reg-profile
+					#J-profile-preview.reg-img-preview
+					.reg-upload-btn                           
+						.j-uploadbtn.y-btn(data-type="profile") 上传个人头像
+					p.tac 您的头像将显示在我们的云梦想墙上
+				.reg-company
+					#J-company-preview.reg-img-preview
+					.reg-upload-btn
+						.j-uploadbtn.y-btn(data-type="company") 上传企业logo
+					p.tac 企业logo会再大会当天展示在会场
+			.reg-story
+				.reg-textarea.cc
+					input.reg-story-ipt.fl(placeholder='说出您云上故事', type='text')
+					button.submit-btn.fr(style='width: 120px') 提交
+
+		#j-uploadHidden.y-dialog.y-overlay.upload-dialog
+			a#j-close-upload(href="#").y-dialog-close.y-overlay-close
+				span.y-dialog-close-x.y-overlay-close-x
+
+			#uploadHidden
+			.upload-bottom-sha
+		
+	script(src="javascripts/upload.js")

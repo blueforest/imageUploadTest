@@ -1,0 +1,30 @@
+
+.upload-dialog{
+	width: 600px;
+	height: 400px;
+	margin-left: -300px;
+	position: absolute;
+	z-index: 111;
+	left: 50%;
+	display: none;
+	top: 50px;
+}
+.reg-upload .reg-upload-img .reg-img-preview{
+	width: 150px;
+	height: 150px;
+}
+.reg-img-preview img{
+	width: 150px;
+	height: 150px;
+	vertical-align: top;
+	display: inline-block;
+	border-radius: 50%;
+}
+.upload-dialog .upload-bottom-sha{
+	height: 36px;
+	width: 200px;
+	position: absolute;bottom: 0;
+	left: 0;
+	background: #fff;
+	z-index: 111;
+}
